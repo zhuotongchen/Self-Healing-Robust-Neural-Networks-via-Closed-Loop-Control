@@ -50,3 +50,6 @@ Default hyper-parameters are: maximum outer iterations is 3, maximum inner itera
 
 ## Numerical result (cifar-10)
 ![alt text](https://github.com/zhuotongchen/Self-Healing-Robust-Neural-Networks-via-Closed-Loop-Control/blob/master/assets/result.png)
+
+### Radar plot on cifar-10, cifar-100, tiny imagenet
+![alt text](https://github.com/zhuotongchen/Self-Healing-Robust-Neural-Networks-via-Closed-Loop-Control/blob/master/assets/result radar.png)
