@@ -17,3 +17,35 @@ The control process adjusts adversarial examples towards the embedding manifold,
 Essentially, this process forms a new decision boundary and enlarges the classification margin as shown in Fig (d).
 
 ![alt text](https://github.com/zhuotongchen/Self-Healing-Robust-Neural-Networks-via-Closed-Loop-Control/blob/master/assets/demonstration.png)
+
+## Description of each file
+### train_models.py
+This contains implementation of training baseline models (standard SGD and [adversarial training](https://github.com/yaodongyu/TRADES)).
+Selecting --train_method to be either standard or robust to choose the training method.
+
+### control_functions.py
+This contains functions to generate adversarial examples via [Autoattack](https://github.com/fra31/auto-attack),
+test the performence of classifiers against those adversarial examples.
+Train embedding function at input layer and hidden layers.
+
+### evaluate_models.py
+This is the main script for testing the closed-loop control algorithm.
+
+By selecting --generate_adversarial_dataset,
+it generates adversarial examples of pre-trained baseline models with autoattack.
+
+By selecting --train_embedding_function_input,
+it trains an embedding function at input layer (default autoencoder is [FCN](https://arxiv.org/pdf/1411.4038.pdf), other option includes [SegNet](https://arxiv.org/pdf/1511.00561.pdf)).
+
+By selecting --train_embedding_function_hidden,
+it trained an embedding function at hidden layer (default autoencoder is a 2-layer convolutional autoencoder).
+
+By selecting --test_models,
+it tests closed-loop controlled baseline module.
+
+### control_module.py
+This is the implementaion of closed-loop control algorithm.
+It converts a given baseline model into a controlled module.
+Default hyper-parameters are: maximum outer iterations is 3, maximum inner iterations is 10, control regularization is 0.001.
+
+
