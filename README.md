@@ -52,4 +52,10 @@ Default hyper-parameters are: maximum outer iterations is 3, maximum inner itera
 ![alt text](https://github.com/zhuotongchen/Self-Healing-Robust-Neural-Networks-via-Closed-Loop-Control/blob/master/assets/result.png)
 
 ### Radar plot on cifar-10, cifar-100, tiny imagenet
-![alt text](https://github.com/zhuotongchen/Self-Healing-Robust-Neural-Networks-via-Closed-Loop-Control/blob/master/assets/result radar.png)
+![alt text](https://github.com/zhuotongchen/Self-Healing-Robust-Neural-Networks-via-Closed-Loop-Control/blob/master/assets/result-radar.png)
+
+## License
+This project is licensed under the MIT license - see the [LICENSE](https://github.com/zhuotongchen/Self-Healing-Robust-Neural-Networks-via-Closed-Loop-Control/blob/master/LICENSE) file for more details.
+
+## Contact
+Please contact <ztchen@ucsb.edu> or <zhuotongchen@gmail.com> if you have any question on the code.
