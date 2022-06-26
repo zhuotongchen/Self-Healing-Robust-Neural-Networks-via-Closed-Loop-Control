@@ -48,4 +48,5 @@ This is the implementaion of closed-loop control algorithm.
 It converts a given baseline model into a controlled module.
 Default hyper-parameters are: maximum outer iterations is 3, maximum inner iterations is 10, control regularization is 0.001.
 
-
+## Numerical result (cifar-10)
+![alt text](https://github.com/zhuotongchen/Self-Healing-Robust-Neural-Networks-via-Closed-Loop-Control/blob/master/assets/result.png)
